@@ -1,5 +1,9 @@
+import Pieces.Color;
+import Pieces.King;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        King king = new King(Color.BLACK);
+        System.out.println(king);
     }
 }
