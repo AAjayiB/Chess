@@ -6,14 +6,14 @@ public class Square {
     private char letter;
     private int number;
     private Piece piece = null;
-    private Square upperLeft;
-    private Square upper;
-    private  Square upperRight;
-    private Square left;
-    private Square right;
-    private Square bottomLeft;
-    private Square bottom;
-    private  Square bottomRight;
+    private Square upperLeft = null;
+    private Square upper = null;
+    private  Square upperRight = null;
+    private Square left = null;
+    private Square right = null;
+    private Square bottomLeft = null;
+    private Square bottom = null;
+    private  Square bottomRight = null;
 
 
     public Square(char letter,int number){
