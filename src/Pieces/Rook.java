@@ -2,7 +2,7 @@ package Pieces;
 
 public class Rook extends Piece{
 
-    Rook(Color color){
-        super("Rook", color);
+    public Rook(Color color){
+        super("R", color);
     }
 }

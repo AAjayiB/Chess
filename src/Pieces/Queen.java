@@ -2,7 +2,7 @@ package Pieces;
 
 public class Queen extends Piece{
 
-    Queen(Color color){
-        super("Queen", color);
+    public Queen(Color color){
+        super("Q", color);
     }
 }
