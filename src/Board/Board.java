@@ -1,70 +1,80 @@
 package Board;
 
+import Pieces.*;
+
 public class Board {
-    Square a1 = new Square('A',1);
-    Square a2 = new Square('A',2);
+    Square a1 = new Square('A',1, new Rook(Color.W));
+    Square b1 = new Square('B',1, new Knight(Color.W));
+    Square c1 = new Square('C',1, new Bishop(Color.W));
+    Square d1 = new Square('D',1, new Queen(Color.W));
+    Square e1 = new Square('E',1, new King(Color.W));
+    Square f1 = new Square('F',1, new Bishop(Color.W));
+    Square g1 = new Square('G',1, new Knight(Color.W));
+    Square h1 = new Square('H',1, new Rook(Color.W));
+
+
+    Square a2 = new Square('A',2, new Pawn(Color.W));
+    Square b2 = new Square('B',2, new Pawn(Color.W));
+    Square c2 = new Square('C',2, new Pawn(Color.W));
+    Square d2 = new Square('D',2, new Pawn(Color.W));
+    Square e2 = new Square('E',2, new Pawn(Color.W));
+    Square f2 = new Square('F',2, new Pawn(Color.W));
+    Square g2 = new Square('G',2, new Pawn(Color.W));
+    Square h2 = new Square('H',2, new Pawn(Color.W));
+
     Square a3 = new Square('A',3);
-    Square a4 = new Square('A',4);
-    Square a5 = new Square('A',5);
-    Square a6 = new Square('A',6);
-    Square a7 = new Square('A',7);
-    Square a8 = new Square('A',8);
-    Square b1 = new Square('B',1);
-    Square b2 = new Square('B',2);
     Square b3 = new Square('B',3);
-    Square b4 = new Square('B',4);
-    Square b5 = new Square('B',5);
-    Square b6 = new Square('B',6);
-    Square b7 = new Square('B',7);
-    Square b8 = new Square('B',8);
-    Square c1 = new Square('C',1);
-    Square c2 = new Square('C',2);
     Square c3 = new Square('C',3);
-    Square c4 = new Square('C',4);
-    Square c5 = new Square('C',5);
-    Square c6 = new Square('C',6);
-    Square c7 = new Square('C',7);
-    Square c8 = new Square('C',8);
-    Square d1 = new Square('D',1);
-    Square d2 = new Square('D',2);
     Square d3 = new Square('D',3);
-    Square d4 = new Square('D',4);
-    Square d5 = new Square('D',5);
-    Square d6 = new Square('D',6);
-    Square d7 = new Square('D',7);
-    Square d8 = new Square('D',8);
-    Square e1 = new Square('E',1);
-    Square e2 = new Square('E',2);
     Square e3 = new Square('E',3);
-    Square e4 = new Square('E',4);
-    Square e5 = new Square('E',5);
-    Square e6 = new Square('E',6);
-    Square e7 = new Square('E',7);
-    Square e8 = new Square('E',8);
-    Square f1 = new Square('F',1);
-    Square f2 = new Square('F',2);
     Square f3 = new Square('F',3);
-    Square f4 = new Square('F',4);
-    Square f5 = new Square('F',5);
-    Square f6 = new Square('F',6);
-    Square f7 = new Square('F',7);
-    Square f8 = new Square('F',8);
-    Square g1 = new Square('G',1);
-    Square g2 = new Square('G',2);
     Square g3 = new Square('G',3);
-    Square g4 = new Square('G',4);
-    Square g5 = new Square('G',5);
-    Square g6 = new Square('G',6);
-    Square g7 = new Square('G',7);
-    Square g8 = new Square('G',8);
-    Square h1 = new Square('H',1);
-    Square h2 = new Square('H',2);
     Square h3 = new Square('H',3);
+
+    Square a4 = new Square('A',4);
+    Square b4 = new Square('B',4);
+    Square c4 = new Square('C',4);
+    Square d4 = new Square('D',4);
+    Square e4 = new Square('E',4);
+    Square f4 = new Square('F',4);
+    Square g4 = new Square('G',4);
     Square h4 = new Square('H',4);
+
+    Square a5 = new Square('A',5);
+    Square b5 = new Square('B',5);
+    Square c5 = new Square('C',5);
+    Square d5 = new Square('D',5);
+    Square e5 = new Square('E',5);
+    Square f5 = new Square('F',5);
+    Square g5 = new Square('G',5);
     Square h5 = new Square('H',5);
+
+    Square a6 = new Square('A',6);
+    Square b6 = new Square('B',6);
+    Square c6 = new Square('C',6);
+    Square d6 = new Square('D',6);
+    Square e6 = new Square('E',6);
+    Square f6 = new Square('F',6);
+    Square g6 = new Square('G',6);
     Square h6 = new Square('H',6);
-    Square h7 = new Square('H',7);
-    Square h8 = new Square('H',8);
+
+    Square a7 = new Square('A',7, new Pawn(Color.B));
+    Square b7 = new Square('B',7, new Pawn(Color.B));
+    Square c7 = new Square('C',7, new Pawn(Color.B));
+    Square d7 = new Square('D',7, new Pawn(Color.B));
+    Square e7 = new Square('E',7, new Pawn(Color.B));
+    Square f7 = new Square('F',7, new Pawn(Color.B));
+    Square g7 = new Square('G',7, new Pawn(Color.B));
+    Square h7 = new Square('H',7, new Pawn(Color.B));
+
+    Square a8 = new Square('A',8, new Rook(Color.B));
+    Square b8 = new Square('B',8, new Knight(Color.B));
+    Square c8 = new Square('C',8, new Bishop(Color.B));
+    Square d8 = new Square('D',8, new Queen(Color.B));
+    Square e8 = new Square('E',8, new King(Color.B));
+    Square f8 = new Square('F',8, new Bishop(Color.B));
+    Square g8 = new Square('G',8, new Knight(Color.B));
+    Square h8 = new Square('H',8, new Rook(Color.B));
 
     public Board(){
     }
@@ -303,4 +313,15 @@ public class Board {
         g8.setRight(h8);
     }
 
+    @Override
+    public String toString() {
+        return a8.toString()+b8+c8+d8+e8+f8+g8+h8+"\n"+
+                a7+b7+c7+d7+e7+f7+g7+h7+"\n"+
+                a6+b6+c6+d6+e6+f6+g6+h6+"\n"+
+                a5+b5+c5+d5+e5+f5+g5+h5+"\n"+
+                a4+b4+c4+d4+e4+f4+g4+h4+"\n"+
+                a3+b3+c3+d3+e3+f3+g3+h3+"\n"+
+                a2+b2+c2+d2+e2+f2+g2+h2+"\n"+
+                a1+b1+c1+d1+e1+f1+g1+h1;
+    }
 }
