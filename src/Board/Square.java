@@ -15,14 +15,21 @@ public class Square {
     private Square bottom = null;
     private  Square bottomRight = null;
 
-
     public Square(char letter,int number){
         this.letter=letter;
         this.number=number;
     }
+    public Square(char letter,int number,Piece piece){
+        this.letter=letter;
+        this.number=number;
+        this.piece=piece;
+    }
 
     public boolean isFree(){
         return piece==null;
+    }
+    public void setPiece(Piece piece){
+        this.piece=piece;
     }
     public void setUpperLeft(Square square){
         this.upperLeft=square;
@@ -47,5 +54,26 @@ public class Square {
     }
     public void setBottomRight(Square square){
         this.bottomRight=square;
+    }
+    public Square getUpperLeft(){
+        return upperLeft;
+    }
+    public Square getUpper() {
+        return upper;
+    }
+    public Square getUpperRight() {
+        return upperRight;
+    }
+    public Square getLeft(){
+        return left;
+    }
+    public Square getRight(){ return right; }
+    public Square getBottomLeft(){ return bottomLeft; }
+    public Square getBottom(){ return bottom; }
+    public Square getBottomRight(){ return bottomRight; }
+
+    @Override
+    public String toString() {
+        return "[ "+piece+"/"+letter+number+" ]";
     }
 }
